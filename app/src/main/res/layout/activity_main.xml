@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Numbers"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:id="@+id/numbers"
+        android:textStyle="bold"
+        android:onClick="opennumbers"
+        android:background="@android:color/holo_orange_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:id="@+id/family"
+            android:padding="16dp"
+            android:text="Family Numbers"
+            android:gravity="center_vertical"
+            android:onClick="openfamily"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_green_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Colors"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:onClick="opencolors"
+        android:id="@+id/colors"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:background="@color/purple_200"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:onClick="openphrases"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+
+        android:text="Phrases"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:background="@android:color/holo_blue_light"
+        android:padding="16dp"
+        />
+
+
+</LinearLayout>

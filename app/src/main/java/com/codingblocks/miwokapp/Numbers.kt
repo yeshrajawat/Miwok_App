@@ -1,14 +1,19 @@
 package com.codingblocks.miwokapp
 
+import android.content.Context
 import android.graphics.Color
+import android.media.AudioFocusRequest
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import android.media.AudioManager
+import android.provider.MediaStore
 import kotlinx.android.synthetic.main.list_item_view1.*
 
 class Numbers : AppCompatActivity() {
      var mediaplayer: MediaPlayer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
@@ -40,6 +45,7 @@ class Numbers : AppCompatActivity() {
                 mediaplayer = releaseplayer(mediaplayer)
                 Toast.makeText(this,"Bhai chal to raha hai ye",Toast.LENGTH_SHORT).show()
             })
+
 
         }
         }

@@ -1,5 +1,5 @@
 # Miwok_App
-A Simple Miwok Language Translation Application to help people learn the endangered language.
+A Simple Miwok Language Translation Application to help people learn the endangered language by listening to the pronounciation oof each and every word.
 Contains Splash Screen having 400ms delay.
 Fragments are used with tab layout
 ![miwok_splash_screen](https://user-images.githubusercontent.com/51243745/112736370-2d130200-8f78-11eb-92c9-33ef26e13d48.PNG)

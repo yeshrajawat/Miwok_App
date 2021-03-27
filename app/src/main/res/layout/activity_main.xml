@@ -1,66 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/teal_700"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:text="Numbers"
-        android:padding="16dp"
-        android:textColor="@color/white"
-        android:gravity="center_vertical"
-        android:id="@+id/numbers"
-        android:textStyle="bold"
-        android:onClick="opennumbers"
-        android:background="@android:color/holo_orange_light"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
-
-        <TextView
+        android:layout_height="60dp">
+        <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
-            android:layout_height="88dp"
-            android:id="@+id/family"
-            android:padding="16dp"
-            android:text="Family Numbers"
-            android:gravity="center_vertical"
-            android:onClick="openfamily"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:background="@android:color/holo_green_dark"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_height="match_parent"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/white"
+            android:background="#00285E"
+            app:tabMode="auto"
+            app:tabInlineLabel="true"
+            android:id="@+id/tabs"
+            app:tabGravity="fill"
             />
-    <TextView
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:text="Colors"
-        android:padding="16dp"
-        android:textStyle="bold"
-        android:onClick="opencolors"
-        android:id="@+id/colors"
-        android:gravity="center_vertical"
-        android:textColor="@color/white"
-        android:background="@color/purple_200"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        />
-    <TextView
-        android:id="@+id/phrases"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:onClick="openphrases"
-        android:textColor="@color/white"
-        android:gravity="center_vertical"
-
-        android:text="Phrases"
-        android:textStyle="bold"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:background="@android:color/holo_blue_light"
-        android:padding="16dp"
-        />
-
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpager"/>
 
 </LinearLayout>
